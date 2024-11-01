@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSky"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".AddressSelectorActivity">
+
+    <LinearLayout
+        android:id="@+id/btn_address_book"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        style="@style/border_radius"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingEnd="4dp"
+            android:src="@drawable/ic_address_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:paddingEnd="8dp"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Current Address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Use account address"
+                android:textColor="@color/silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:onClick="useCurrentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_address_book_click"
+            android:scaleType="fitEnd"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Saved Places"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/btn_new_place"
+                android:onClick="addNewAddress"
+                style="@style/border_radius"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:ignore="UsingOnClickInXml">
+
+                <ImageView
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_plus_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="New place"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

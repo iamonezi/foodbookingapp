@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryMenuActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <LinearLayout
+        style="@style/border_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delivery_to"
+            android:scaleType="fitStart"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery to"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deliveryTo_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="128 Nguyen Dinh Chieu,D.3,HCM..."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deliveryTo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nick"
+                    android:textColor="@color/silver" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:text="•"
+                    android:textColor="@color/silver" />
+
+                <TextView
+                    android:id="@+id/deliveryTo_numberPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0896969696"
+                    android:textColor="@color/silver" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_address_navigate_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_address_book_click"
+            android:scaleType="fitEnd"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_store_menu" />
+
+</LinearLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eff7ff"
+    tools:context=".OrderDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:src="@drawable/img_prepare" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linearWrapper"
+                    style="@style/groupStylePreparing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtLabelvalue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.36"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:text="Preparing" />
+
+                    <Button
+                        android:id="@+id/btn_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/custom_button_order"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="Contact support"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General info"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <LinearLayout
+                    style="@style/groupStylePreparing"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                       >
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Order ID" />
+
+                        <TextView
+                            android:id="@+id/order_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="end"
+                            android:text="247-96024" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/lineThinOne"
+                        android:layout_width="340dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Order date" />
+
+                        <TextView
+                            android:id="@+id/order_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textStyle="bold"
+                            android:text="20/04/2020, 04:20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Shipping details" />
+
+                <LinearLayout
+                    style="@style/groupStylePreparing"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/img_home" />
+
+                        <LinearLayout
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="From store" />
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/local_store"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="13 Han Thuyen, D.1, HCM city" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_location"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/img_location" />
+
+                        <LinearLayout
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/toOrpickup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="To" />
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="13 Han Thuyen, D.1, HCM city" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Product info" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/groupStylePreparing"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rcv"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Payment info" />
+
+                <LinearLayout
+                    style="@style/groupStylePreparing"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img_momo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Payment method" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Momo" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/groupStylePreparing"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total" />
+
+                        <TextView
+                            android:id="@+id/totalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textStyle="bold"
+                            android:text="319.000 ₫" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

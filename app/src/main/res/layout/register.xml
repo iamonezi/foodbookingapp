@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/register_background">
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:hint="Full name" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtEmail"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:hint=" Email "
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_marginTop="10dp"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_marginTop="10dp"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_marginTop="10dp"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:hint="Phone number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_marginTop="10dp"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:hint="Address"
+        android:inputType="text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up"
+        android:textColor="#ffff"
+        android:textSize="24dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@drawable/custom_button_loginpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+</LinearLayout>

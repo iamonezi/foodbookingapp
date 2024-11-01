@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="groupStylePreparing">
+        <item name="android:background">@drawable/rectangle_order_box</item>
+    </style>
+
+    <style name="border_radius">
+        <item name="android:background">@drawable/border_radius</item>
+    </style>
+    
+    <style name="Button.Blue" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/blue</item>
+    </style>
+</resources>

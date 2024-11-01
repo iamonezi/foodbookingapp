@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_item_menu"
+            android:layout_width="66dp"
+            android:layout_height="48dp"
+            android:src="@drawable/coffee"
+            android:contentDescription="coffee_image" />
+
+        <TextView
+            android:id="@+id/menu_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Pure Black"/>
+
+        <TextView
+            android:id="@+id/menu_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="46.000"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <android.widget.Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Add to cart"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <android.widget.Button
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Detail"
+            android:textColor="@color/black"
+            android:textSize="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

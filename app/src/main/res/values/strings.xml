@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PRM392_Beverages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_delivery_menu">DeliveryMenuActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="recipient_name">Recipient\'s name</string>
+    <string name="recipient_phone">Recipient\'s phone</string>
+    <string name="save_to_address">Save to address</string>
+    <string name="address_store_pickup">Cầu Rau Răm, đường Nguyễn Văn Cừ nối dài, An Bình, Ninh Kiều, Cần Thơ</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eff7ff"
+    android:orientation="vertical"
+    tools:context=".Delivery_Preparing_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/order_detail"
+                style="@style/groupStylePreparing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15sp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/groupStylePreparing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10sp">
+
+                    <TextView
+                        android:id="@+id/status_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/custom_text_orderhistory_delivering"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Order completed"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#00AB56">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/order_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20/04/2020, 04:20"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/img_home"></ImageView>
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="@string/address_store_pickup">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/locateToTime"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/img_clock"></ImageView>
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="10:00, Today"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/listProduct"
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:text="Capuccino (x1), Smoky hamburger (x1)"></TextView>
+
+                    <TextView
+                        android:id="@+id/totalPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="334.000 ₫"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

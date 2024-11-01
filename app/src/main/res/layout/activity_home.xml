@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_store_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pickup" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Pickup"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Best quality"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delivery" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:layout_marginLeft="65dp"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text="Always on time"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        />
+
+</RelativeLayout>

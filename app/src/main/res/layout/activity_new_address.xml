@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSky"
+    tools:context=".NewAddressActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        style="@style/border_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:background="@drawable/custom_input"
+                android:hint="Lot number, street name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/silver"
+                android:paddingStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/recipient_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_recipient_name"
+                android:background="@drawable/custom_input"
+                android:hint="E.g Nguyen Van A"
+                android:textColor="@color/black"
+                android:textColorHint="@color/silver"
+                android:paddingStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/recipient_phone"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edt_recipient_phone"
+                android:background="@drawable/custom_input"
+                android:hint="10-digit phone number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/silver"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/btnSaveAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>

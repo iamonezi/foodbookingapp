@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DeliveryMenuActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="clip_horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_store_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="28dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup at"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_store_pickup"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_store_cart"
+        android:text="Go to Cart"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_cates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Products"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginVertical="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
